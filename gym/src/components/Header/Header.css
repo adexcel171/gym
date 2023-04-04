@@ -1,0 +1,55 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:6rem;
+    height:6rem;
+    border-radius: 50%;
+    
+}
+
+
+.header-menu{
+    list-style:none;
+    display: flex;
+    gap:2rem;
+    color:white;
+}
+
+.header-menu > li:hover{
+    cursor:pointer;
+    color: var(--orange);
+}
+@media (max-width: 767.98px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       align-items: center;
+    
+       
+    
+    }
+    
+.logo{
+    
+    
+    
+    
+}
+.header-menu{
+    list-style:none;
+    display: flex;
+
+    color:white;
+    font-size: 14px;
+    padding-left: 6px;
+    width: 100%;
+    
+
+
+}
+
+}
