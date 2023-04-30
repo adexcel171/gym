@@ -15,7 +15,7 @@ const Hero = () => {
         {/* the best ad */}
         <div className="the-best-ad">
           <div></div>
-          <span>The best fitness club in the town</span>
+          <span>The best fitness club in the bwari</span>
         </div>
 
         {/* Hero Heading */}
@@ -40,11 +40,11 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>+14</span>
             <span>expert coaches</span>
           </div>
           <div>
-            <span>+978</span>
+            <span>+</span>
             <span>members joined</span>
           </div>
           <div>
