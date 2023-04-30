@@ -1,55 +1,163 @@
-.header{
-    display:flex;
-    justify-content: space-between;
-}
 
-.logo{
-    width:6rem;
-    height:6rem;
-    border-radius: 50%;
+* {
+    margin: 0;
+    box-sizing: border-box;
+  
     
-}
-
-
-.header-menu{
-    list-style:none;
-    display: flex;
-    gap:2rem;
-    color:white;
-}
-
-.header-menu > li:hover{
-    cursor:pointer;
-    color: var(--orange);
-}
-@media (max-width: 767.98px){
-    .header{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-       align-items: center;
-    
-       
-    
-    }
-    
-.logo{
-    
-    
-    
-    
-}
-.header-menu{
-    list-style:none;
-    display: flex;
-
-    color:white;
-    font-size: 14px;
-    padding-left: 6px;
+  }
+  
+  /* ---------------- Navbar and burger menu ------------------ */
+  nav {
     width: 100%;
+    height: 5em;
+    background-color: rgb(37, 39, 53);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+   transition: 1s ease-in;
+  
+      
+  }
+  .logo:hover{
+      transform: scale(1.09);
+  
+  }
+  
+  .nav-list{
+      display: flex;
+      padding-left:16px;
+      list-style: none;
+      
+  
+  
+  }
+  .nav-item{
+      text-decoration: none;
+      margin-left:20px ;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+  font-family: 'Poppins', sans-serif;
+      transition: ease-out 0.2s;
+      
+  
+  }
+  .nav-item:hover{
+  color: rgb(146, 126, 126);
+  
+      
+  
+  
+  }
+  
+  .burger-menu {
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+  
+  }
+  
+  .burger-bar {
+  display: none;
+  }
+  
+  .menu {
+  display: none;
+  }
+  
+  /* ------------- sliding menu ------------------ */
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: inherit;
+  }
+  
+  /* ----- animations--------- */
+  /* clicked */
+  .burger-bar.clicked:nth-child(1){
+      transform: rotate(45deg) translate(0.75em, 1.25em);
+      transition: ease-out 0.5s;
+  }
+  
+  .burger-bar.clicked:nth-child(2){
+      transform: scale(0.1);
+      transition: ease-out 0.5s;
+  }
+  
+  .burger-bar.clicked:nth-child(3){
+      transform: rotate(135deg) translate(-0.5em, 1em);
+      transition: ease-out 0.5s;
+  }
+  
+  /* unclicked */
+  .burger-bar.unclicked {
+      transform: rotate(0) translate(0);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+  @media (max-width: 767.98px){
+   
+      
+  .menu {
+  background-color:rgb(77, 68, 68);
+  padding-top: 25px;
+  width: 50%;
+  height: 100vh;
+  font-size: 24px;
+
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  transition: ease-in 1s;
+      
+      
+    }
+    .mobile-nav-list{
+      list-style-type: none;
+      
+      padding-left: 30px;
+      font-size: 16px;
+   
+    }
+    .burger-bar{
+      display: inline-block;
+      width: 4em;
+      height: 0.5em;
+      background-color: rgb(122, 127, 129);
+      border-radius: 0.5em;
+  }
     
-
-
-}
-
-}
+    .nav-list{
+      display: none;
+  
+    } 
+    .nav-item{
+      font-size: 24px;
+      font-weight: bold;
+      padding-top:50px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .burger-menu {
+      height: 100%;
+      width: 5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      cursor: pointer;
+  }
+  
+  
+    
+  }

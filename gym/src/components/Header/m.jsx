@@ -1,9 +1,8 @@
-import React from 'react'
-import './Header.css'
-import logo from '../../assets/logo.png'
+import './navbar.css'
+import logo from './logg.PNG'
 import { useState } from 'react'
 
-const Header = () => {
+const Navbar = () => {
 
     // to change burger classes
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
@@ -19,13 +18,16 @@ const Header = () => {
         else {
             setBurgerClass("burger-bar unclicked")
             setMenuClass("menu hidden")
-        }
+    
+}
         setIsMenuClicked(!isMenuClicked)
     }
 
+
+
   return (
     <div>
-       <nav className='nav-container'>
+       <nav>
        <img className='logo' src={logo} alt="logo" />
 
                 <div className="burger-menu" onClick={updateMenu}>
@@ -57,8 +59,7 @@ const Header = () => {
     </div>
       
     </div>
-
   )
 }
 
-export default Header
+export default Navbar
