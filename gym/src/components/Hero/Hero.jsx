@@ -44,7 +44,7 @@ const Hero = () => {
             <span>expert coaches</span>
           </div>
           <div>
-            <span>+</span>
+            <span>+400</span>
             <span>members joined</span>
           </div>
           <div>
