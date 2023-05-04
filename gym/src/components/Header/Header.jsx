@@ -37,8 +37,9 @@ const Header = () => {
 
                 <ul className='nav-list'>
             <li className='nav-item'>Home</li>
+            <li className='nav-item'>Programs</li>
             <li className='nav-item'>About</li>
-            <li className='nav-item'>Product</li>
+            <li className='nav-item'>Testimonials</li>
             <li className='nav-item'>Contact</li>
         </ul>
 

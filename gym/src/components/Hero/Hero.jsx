@@ -5,11 +5,17 @@ import hero_image from '../../assets/hero_image.png';
 import hero_image_back from "../../assets/hero_image_back.png"
 import Heart from "../../assets/heart.png"
 import Calories from "../../assets/calories.png"
+import  AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(()=>{
+
+  },[])
   return (
     <div className="hero">
-      <div className="left-h">
+      <div data-aos="fade-up" className="left-h">
         <Header />
 
         {/* the best ad */}
@@ -38,7 +44,7 @@ const Hero = () => {
         </div>
 
         {/* figures */}
-        <div className="figures">
+        <div  className="figures">
           <div>
             <span>+14</span>
             <span>expert coaches</span>
